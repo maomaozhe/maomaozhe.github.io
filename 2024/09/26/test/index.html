@@ -19,20 +19,20 @@
   <meta name="author" content="maomaozhe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这是一篇测试文章">
+    <meta name="description" content="这是一篇测试文章这是一篇测试文章这是一篇测试文章 测试图片： 12345&#123;% asset_img test.jpg 图片引用方法一 %&#125; ![图片引用方法三](test\test.jpg)[图片引用方法三](test.jpg)似乎要这样，hexo会把他们整合      bug: windows中路径是 test\test.jpg 不是png hhh 以及注意文件的后缀哈哈哈哈">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test">
 <meta property="og:url" content="http://example.com/2024/09/26/test/index.html">
 <meta property="og:site_name" content="maomaozhe">
-<meta property="og:description" content="这是一篇测试文章">
+<meta property="og:description" content="这是一篇测试文章这是一篇测试文章这是一篇测试文章 测试图片： 12345&#123;% asset_img test.jpg 图片引用方法一 %&#125; ![图片引用方法三](test\test.jpg)[图片引用方法三](test.jpg)似乎要这样，hexo会把他们整合      bug: windows中路径是 test\test.jpg 不是png hhh 以及注意文件的后缀哈哈哈哈">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/test.png">
-<meta property="og:image" content="http://example.com/test/test.png">
+<meta property="og:image" content="http://example.com/test.jpg">
+<meta property="og:image" content="http://example.com/2024/09/26/test/test.jpg">
 <meta property="article:published_time" content="2024-09-26T12:44:02.000Z">
-<meta property="article:modified_time" content="2024-09-26T12:56:39.155Z">
+<meta property="article:modified_time" content="2024-09-28T13:38:29.514Z">
 <meta property="article:author" content="maomaozhe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/test.png">
+<meta name="twitter:image" content="http://example.com/test.jpg">
   
   
   
@@ -238,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8 字
+          149 字
         
       </span>
     
@@ -249,7 +249,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -300,9 +300,16 @@
             
               <div class="markdown-body">
                 
-                <p>   这是一篇测试文章  </p>
-<p><img src="/test.png" srcset="/img/loading.gif" lazyload alt="test.png"> </p>
-<p><img src="/test/test.png" srcset="/img/loading.gif" lazyload alt="test/test.png"></p>
+                <h2 id="这是一篇测试文章"><a href="#这是一篇测试文章" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h2><h3 id="这是一篇测试文章-1"><a href="#这是一篇测试文章-1" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h3><h4 id="这是一篇测试文章-2"><a href="#这是一篇测试文章-2" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h4><p> 测试图片：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs cmake">&#123;% asset_img <span class="hljs-keyword">test</span>.jpg 图片引用方法一 %&#125; <br><br>![图片引用方法三](<span class="hljs-keyword">test</span>\<span class="hljs-keyword">test</span>.jpg)<br>[图片引用方法三](<span class="hljs-keyword">test</span>.jpg)<br>似乎要这样，hexo会把他们整合<br></code></pre></td></tr></table></figure>
+
+<p><img src="/test.jpg" srcset="/img/loading.gif" lazyload alt="图片引用方法三"></p>
+<img src="/2024/09/26/test/test.jpg" srcset="/img/loading.gif" lazyload class="" title="图片引用方法一"> 
+
+<p>bug:</p>
+<p>windows中路径是 <code>test\test.jpg</code> 不是<del>png</del> hhh 以及<u>注意文件的后缀</u>哈哈哈哈</p>
+<p>debug 时候突然灵光，md中复制的时候，不是会出现图片路径嘛，比对一下</p>
+<p>还有就是，看到这张测试图片，百感交集哈哈哈，最近综测看着这些材料…..</p>
 
                 
               </div>

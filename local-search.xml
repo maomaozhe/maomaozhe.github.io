@@ -27,7 +27,7 @@
     <link href="/2024/09/26/test/"/>
     <url>/2024/09/26/test/</url>
     
-    <content type="html"><![CDATA[<p>   这是一篇测试文章  </p><p><img src="/test.png" alt="test.png"> </p><p><img src="/test/test.png" alt="test/test.png"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="这是一篇测试文章"><a href="#这是一篇测试文章" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h2><h3 id="这是一篇测试文章-1"><a href="#这是一篇测试文章-1" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h3><h4 id="这是一篇测试文章-2"><a href="#这是一篇测试文章-2" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h4><p> 测试图片：</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs cmake">&#123;% asset_img <span class="hljs-keyword">test</span>.jpg 图片引用方法一 %&#125; <br><br>![图片引用方法三](<span class="hljs-keyword">test</span>\<span class="hljs-keyword">test</span>.jpg)<br>[图片引用方法三](<span class="hljs-keyword">test</span>.jpg)<br>似乎要这样，hexo会把他们整合<br></code></pre></td></tr></table></figure><p><img src="/test.jpg" alt="图片引用方法三"></p><img src="/2024/09/26/test/test.jpg" class="" title="图片引用方法一"> <p>bug:</p><p>windows中路径是 <code>test\test.jpg</code> 不是<del>png</del> hhh 以及<u>注意文件的后缀</u>哈哈哈哈</p><p>debug 时候突然灵光，md中复制的时候，不是会出现图片路径嘛，比对一下</p><p>还有就是，看到这张测试图片，百感交集哈哈哈，最近综测看着这些材料…..</p>]]></content>
     
     
     
