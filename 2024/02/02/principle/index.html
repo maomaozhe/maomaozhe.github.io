@@ -1,0 +1,759 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/favicon.svg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="maomaozhe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="principle面对各种情况时，人往往会 受主观因素 和 外界声音的影响，而且这个影响比想象的要大。并且，我们会发现，很多时候，相同的问题与感觉在不断上演，这也启示我们：**遇到困难时，记录下来，去解决它，不要偷懒**，日后会再见的。不应该忽略问题 这个困难非常广泛，可以是数据结构算法的一些问题，可以是与人相处时的….. 感到浮躁太浮躁了，zxf的意思，看看自己现在有什么，在某一领域深耕，好比我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="principle">
+<meta property="og:url" content="http://example.com/2024/02/02/principle/index.html">
+<meta property="og:site_name" content="maomaozhe">
+<meta property="og:description" content="principle面对各种情况时，人往往会 受主观因素 和 外界声音的影响，而且这个影响比想象的要大。并且，我们会发现，很多时候，相同的问题与感觉在不断上演，这也启示我们：**遇到困难时，记录下来，去解决它，不要偷懒**，日后会再见的。不应该忽略问题 这个困难非常广泛，可以是数据结构算法的一些问题，可以是与人相处时的….. 感到浮躁太浮躁了，zxf的意思，看看自己现在有什么，在某一领域深耕，好比我">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-02-02T02:31:15.000Z">
+<meta property="article:modified_time" content="2025-04-28T14:11:02.597Z">
+<meta property="article:author" content="maomaozhe">
+<meta property="article:tag" content="反思">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>principle - maomaozhe</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/scroll.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"lqFwd5uxPeFEUi20HTWDZfQh-gzGzoHsz","app_key":"sLeK8JqPEygljRFtkONuBdqf","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>maomaozhe&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/%E6%96%87%E7%AB%A0%E8%83%8C%E6%99%AF.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="principle"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-02-02 10:31" pubdate>
+          2024年2月2日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          13 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">principle</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h4 id="principle"><a href="#principle" class="headerlink" title="principle"></a>principle</h4><p>面对各种情况时，人往往会 受主观因素 和 外界声音的影响，而且这个影响比想象的要大。<br>并且，我们会发现，很多时候，相同的问题与感觉在不断上演，这也启示我们：**<u>遇到困难时，记录下来，去解决它，不要偷懒</u>**，日后会再见的。不应该忽略问题</p>
+<p>这个困难非常广泛，可以是数据结构算法的一些问题，可以是与人相处时的…..</p>
+<h4 id="感到浮躁"><a href="#感到浮躁" class="headerlink" title="感到浮躁"></a>感到浮躁</h4><p>太浮躁了，zxf的意思，看看自己现在有什么，在某一领域深耕，好比我现在是“双非大学”“计算机专业”“班干部”，的确，非常容易浮躁，非常容易失去耐心，这很正常，问题的关键并非是否会浮躁，而是<u>浮躁时你如何调整</u>，<strong>浮躁只是主观的感觉</strong>，非常容易受环境 和 他人 和一些信息 的影响，这就注定了它不是客观事实，它是<strong>纸老虎</strong>，应该培养的是<u>迅速从浮躁中 看到背后的原因</u> 并且清醒过来，做出改变，jack ma说得很好“”<br><strong>people worried about future because they lack of confidences and they lack of imagination.</strong></p>
+<p>1.养成记下来，<strong>评估</strong>要养成，要改变的事（自己想记下来一下东西却“不知道写哪”“不知道些啥”）</p>
+<p>2.勤反思，状态不好时 <em>运动运动或听听歌 看看美剧</em></p>
+<h4 id="对权威有种天然的崇拜-褪魅"><a href="#对权威有种天然的崇拜-褪魅" class="headerlink" title="对权威有种天然的崇拜 褪魅"></a>对<em>权威</em>有种天然的崇拜 褪魅</h4><p><strong>智者会向愚者学习，愚者不会向智者学习。</strong></p>
+<h4 id="系统，条理，有规划的学习"><a href="#系统，条理，有规划的学习" class="headerlink" title="系统，条理，有规划的学习"></a>系统，条理，有规划的学习</h4><p>以及明确目标</p>
+<p>很多一时兴起的事情和习惯都难以坚持下去，见到别人健硕的身材，当天你可能会斗志慢慢冲去跑步或锻炼，三天后，一个星期后，一个月后呢？这也启示我们：<u><strong>一时感性，不经慎密分析规划的努力往往会白费</strong></u></p>
+<p>因此：在做一件事之前，<u>试着去 “眺望”一下</u>，相较于一时努力做做（好比不定时随便写写数学，物理），试着去规划一下，排除主观因素，只是去审视</p>
+<p><u>长期思维， <strong>学习的系统与科学性</strong> ，比如高等数学 ，工整的笔记，<strong>清晰一目了然的框架</strong>，比偶尔乱写一点题目肯定要强。</u></p>
+<p>自己的leetcode便是</p>
+<h4 id="慢一点点，开心一点点"><a href="#慢一点点，开心一点点" class="headerlink" title="慢一点点，开心一点点"></a>慢一点点，开心一点点</h4><p>we are humans , we going to lose days, that is ok, however,  we should to analyze the true reason behind the fucking phenomenon</p>
+<p>客观事实是：你还年轻，你有健康的身体（你有最宝贵的东西）</p>
+<p>这个句话用于，在自己感到焦虑，学习的时候感到没有意义，或者和对方对比时感到无力</p>
+<h4 id="decision-making-instincts"><a href="#decision-making-instincts" class="headerlink" title="decision- making   instincts"></a>decision- making   <strong>instincts</strong></h4><p>be a observe</p>
+<p>most people struggle to <u>reconcile</u> their emotion and their instincts(which come from the animal part of parts of the their brains)<br>这让我想到了昨天的英语竞赛，或是面试，我只是听从current feeling and instincts 缺少冷静的看待分析。</p>
+<h4 id="警惕“恍然大悟的陷阱”-，test-yourself"><a href="#警惕“恍然大悟的陷阱”-，test-yourself" class="headerlink" title="警惕“恍然大悟的陷阱” ，test yourself"></a>警惕“恍然大悟的陷阱” ，test yourself</h4><h4 id="消费"><a href="#消费" class="headerlink" title="消费"></a>消费</h4><p>在事情<strong>繁杂不确定</strong>时 不影响做其他事情的效率和状态（数学课上“二手书订购”），<br>一方面，买书时我应该冷静下来，客观的思考，“我该怎么选择”“我该问他们什么信息”“他们的优劣”，<br>另外一方面，出现问题后的解决，“公关”怎么去和他们说明，当然有时候无法顾及到每个人的感受，如何去处理好？<br>同时<br>你是这个班的leader，果断自信的作出决策</p>
+<p>回过头看，多大点事 . . . . . .</p>
+<h4 id="情绪低落波动时-看待-处理一些事情"><a href="#情绪低落波动时-看待-处理一些事情" class="headerlink" title="情绪低落波动时 看待&#x2F;处理一些事情"></a>情绪低落波动时 看待&#x2F;处理一些事情</h4><p><u>在波动的时候通常是结果有悖于预期，</u>客套话，交谈当然没<u>什么问题。问题的关键是在这种过程中，保持理智去挖取关键信息，以及围绕关键点展开，比如磨损处使用程度等</u><br>（指的是在和他买卖拍子的时候）</p>
+<p>冷静一下——自己需要信息，在得到要的信息，经过分析得出结论之后，设想各种可能以及各种应对措施，以至于在它发生的时候知道怎么去做，而不是被情绪左右，无法理智的冷静下来做其他的事情。总之这事也算交了一个学费</p>
+<p><strong><u>在整体资源劣势的情况下创造出局部的优势，进而有机会获得整个“战役”的机会</u></strong></p>
+<p>只有傻子会忽略不利因素，只有懦夫会让不利因素左右犹豫不决</p>
+<h4 id="学习的哲学"><a href="#学习的哲学" class="headerlink" title="学习的哲学"></a>学习的哲学</h4><p>方法论：</p>
+<ul>
+<li><p>code</p>
+<p>一开始不应该过分关注小的细节实现，而是对 功能&#x2F;系统 流程的简单逻辑，比如，对于springboot, 一开始不是过于关注某个细节容器，而是由上向下的，从 逻辑原理 理解 再到 实际动手写代码</p>
+<p>好比写算法题，一开始不应该过分关注具体代码实现，而是分析题目后自己的算法思想，接着才是用代码把 思想体现出来。</p>
+<p>逻辑就是：<br>这样避免了无效的思考，而是沿着一条逻辑线</p>
+</li>
+</ul>
+<p>刚刚在调试苍穹外卖，redis 的 密码配置， 以及项目中如何使用Redis 的，因为当时没有形成文档，或者留下痕迹 …… </p>
+<p>当时可能懒惰，或是认为没有必要，这导致了当时<strong>时间的付出的收益随着时间递减</strong>   <u>线代大物</u>这些是这样 一段r<u>elationship</u>也是这样，记录，反思，学到东西</p>
+<h4 id="背后的原因"><a href="#背后的原因" class="headerlink" title="背后的原因"></a>背后的原因</h4><ul>
+<li>case 1<br>周斌 和 年轻下属， 从下属的角度来看，单纯只是 领导抓，不待见…….</li>
+<li>case 2<br>焱焱和我闹的时候， 从我的视角来看，似乎是我的问题….</li>
+<li>case 3<br>lyf 和 lx 分手， lyf 的视角来看…….</li>
+</ul>
+<p>所以有时候1. 避免局限，从不同视角（自己的视角，对方的视角，旁观者的视角）2.不要老是找自己的原因，不要陷入死胡同，很多时候都是有逻辑的，从</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%8F%8D%E6%80%9D/" class="print-no-link">#反思</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>principle</div>
+      <div>http://example.com/2024/02/02/principle/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>maomaozhe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年2月2日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/02/27/%E6%97%A5%E5%B8%B8%E6%B8%85%E5%8D%95/" title="日常清单">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">日常清单</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"lqFwd5uxPeFEUi20HTWDZfQh-gzGzoHsz","appKey":"sLeK8JqPEygljRFtkONuBdqf","path":"window.location.pathname","placeholder":"说点什么吧 ~","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访问量数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/runtime.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/DynamicLine.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/snowflake.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/love.min.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+</html>
